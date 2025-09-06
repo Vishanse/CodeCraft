@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML & CSS Tutorials – CodeCraft</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <span class="mark"></span>
+        <span>CodeCraft</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="snippets.html">Snippets</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>HTML & CSS Tutorials</h1>
+    <p class="muted">Step-by-step lessons for beginners. Copy the code, run it in your editor, and start building real websites.</p>
+
+    <!-- Tutorial 1 -->
+    <article class="card" id="html-structure">
+      <h2>HTML Page Structure</h2>
+      <p>The foundation of every webpage is a clean HTML structure. Here’s the simplest example:</p>
+      <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;Site Header&lt;/header&gt;
+  &lt;main&gt;Main Content&lt;/main&gt;
+  &lt;footer&gt;Footer&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </article>
+
+    <!-- Tutorial 2 -->
+    <article class="card" id="flexbox-centering">
+      <h2>CSS Flexbox Centering</h2>
+      <p>Center elements horizontally and vertically with just a few CSS rules.</p>
+      <pre><code>.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+</code></pre>
+    </article>
+
+    <!-- Tutorial 3 -->
+    <article class="card" id="responsive-grid">
+      <h2>Responsive Grid Layout</h2>
+      <p>A simple grid that changes from 3 columns to 1 column on smaller screens.</p>
+      <pre><code>.grid {
+  display: grid;
+  gap: 16px;
+}
+.grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 900px) {
+  .grid.cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+</code></pre>
+    </article>
+
+    <!-- Tutorial 4 -->
+    <article class="card" id="forms">
+      <h2>HTML Forms</h2>
+      <p>Create interactive forms to collect user input.</p>
+      <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input id="name" type="text" required&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input id="email" type="email" required&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+    </article>
+
+    <!-- Tutorial 5 -->
+    <article class="card" id="media-queries">
+      <h2>CSS Media Queries</h2>
+      <p>Make your site adapt to different screen sizes.</p>
+      <pre><code>@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+</code></pre>
+    </article>
+
+    <!-- Ad placeholder -->
+    <div class="ad">Ad placeholder (728×90)</div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section>
+        <h3>About</h3>
+        <p>CodeCraft provides short, practical HTML & CSS tutorials for beginners.</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="snippets.html">Snippets</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: you@example.com</li>
+          <li>Location: Your City, Country</li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">© 2025 CodeCraft. All rights reserved.</div>
+  </footer>
+</body>
+</html>
+

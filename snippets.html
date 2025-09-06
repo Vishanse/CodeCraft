@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Snippets – CodeCraft</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <span class="mark"></span>
+        <span>CodeCraft</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="snippets.html">Snippets</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>HTML & CSS Code Snippets</h1>
+    <p class="muted">Copy-paste ready examples for your projects.</p>
+
+    <div class="grid cols-3">
+      <!-- Snippet 1 -->
+      <article class="card">
+        <h2>Button with Hover Effect</h2>
+        <pre><code>&lt;button class="btn"&gt;Click Me&lt;/button&gt;
+
+.btn {
+  background: #0077cc;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #005fa3;
+}
+</code></pre>
+      </article>
+
+      <!-- Snippet 2 -->
+      <article class="card">
+        <h2>Simple Navbar</h2>
+        <pre><code>&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+  &lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: #333;
+}
+nav a:hover {
+  color: #0077cc;
+}
+</code></pre>
+      </article>
+
+      <!-- Snippet 3 -->
+      <article class="card">
+        <h2>Card Layout</h2>
+        <pre><code>&lt;div class="card"&gt;
+  &lt;h3&gt;Card Title&lt;/h3&gt;
+  &lt;p&gt;Card content goes here.&lt;/p&gt;
+&lt;/div&gt;
+
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+</code></pre>
+      </article>
+
+      <!-- Snippet 4 -->
+      <article class="card">
+        <h2>Image with Rounded Corners</h2>
+        <pre><code>&lt;img src="image.jpg" alt="Example" class="round"&gt;
+
+.round {
+  border-radius: 12px;
+}
+</code></pre>
+      </article>
+
+      <!-- Snippet 5 -->
+      <article class="card">
+        <h2>Responsive Columns</h2>
+        <pre><code>.grid {
+  display: grid;
+  gap: 16px;
+}
+.grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .grid.cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+</code></pre>
+      </article>
+
+      <!-- Snippet 6 -->
+      <article class="card">
+        <h2>Sticky Footer</h2>
+        <pre><code>body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+}
+</code></pre>
+      </article>
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ad">Ad placeholder (300×250)</div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <section>
+        <h3>About</h3>
+        <p>CodeCraft provides short, practical HTML & CSS tutorials for beginners.</p>
+      </section>
+      <section>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="snippets.html">Snippets</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: you@example.com</li>
+          <li>Location: Your City, Country</li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">© 2025 CodeCraft. All rights reserved.</div>
+  </footer>
+</body>
+</html>
+
