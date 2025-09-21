@@ -8,8 +8,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #2d2d2d;
-  background: #fffef9;
+  color: #4a3f4a; /* dark muted purple for text */
+  background: #fff9f9; /* very light pink */
 }
 
 /* Containers */
@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #1e2d24;
+  color: #6e3667; /* deeper pink/purple */
   margin-bottom: 10px;
 }
 
@@ -30,14 +30,14 @@ p {
 }
 
 .muted {
-  color: #666;
+  color: #a080a2; /* muted pink */
   font-size: 0.95em;
 }
 
 /* ========== Header ========== */
 header {
-  background: #28a745;
-  color: white;
+  background: #f7c948; /* bright yellow */
+  color: #4a3f4a; /* dark muted purple */
   padding: 15px 0;
 }
 
@@ -59,12 +59,12 @@ header .nav {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ffc107;
+  background: #d8517a; /* pink */
   display: inline-block;
 }
 
 nav a {
-  color: white;
+  color: #4a3f4a;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
@@ -72,6 +72,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: #d8517a;
 }
 
 /* ========== Hero Section ========== */
@@ -85,6 +86,7 @@ nav a:hover {
 .hero h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  color: #6e3667;
 }
 
 /* ========== Buttons ========== */
@@ -92,23 +94,27 @@ nav a:hover {
   display: inline-block;
   padding: 10px 16px;
   margin-top: 10px;
-  background: #28a745;
+  background: #d8517a; /* pink */
   color: white;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s ease;
+  cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
-  background: #218838;
+  background: #b84067; /* darker pink */
 }
 
 .btn.alt {
-  background: #ffc107;
+  background: #f7c948; /* yellow */
+  color: #4a3f4a;
+  border: none;
 }
 
 .btn.alt:hover {
-  background: #e0a800;
+  background: #d1a735; /* darker yellow */
 }
 
 .btn.small {
@@ -119,11 +125,11 @@ nav a:hover {
 /* ========== Cards ========== */
 .card {
   background: white;
-  border: 1px solid #ddd;
+  border: 1px solid #e2cbd7; /* very light pink border */
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(216, 81, 122, 0.1); /* subtle pink shadow */
 }
 
 /* ========== Grid Layouts ========== */
@@ -151,39 +157,41 @@ nav a:hover {
 
 /* ========== Code Blocks ========== */
 pre {
-  background: #f4f4f4;
+  background: #fcefee; /* very light pink */
   padding: 12px;
   border-radius: 6px;
   overflow-x: auto;
   font-size: 0.95em;
+  color: #6e3667;
 }
 
 code {
   font-family: "Courier New", monospace;
 }
 
-/* ========== Ads Placeholder ========== */
+/* ========== Ads Placeholder (AdSense Safe) ========== */
 .ad {
-  background: #fff3cd;
-  border: 2px dashed #ffc107;
+  background: #fff3cd; /* soft yellow */
+  border: 2px dashed #d8517a; /* pink dashed border */
   text-align: center;
   padding: 20px;
   margin: 20px 0;
   font-size: 0.95em;
-  color: #856404;
+  color: #9f3b5f; /* dark pink */
   border-radius: 8px;
+  user-select: none;  /* prevent accidental text selection */
 }
 
 /* ========== Footer ========== */
 footer {
-  background: #1e2d24;
-  color: #ddd;
+  background: #6e3667; /* deep pink/purple */
+  color: #f8e8f2; /* very light pink */
   padding: 30px 0;
   margin-top: 30px;
 }
 
 footer h3 {
-  color: #fff;
+  color: #fcefee;
   margin-bottom: 10px;
 }
 
@@ -196,12 +204,13 @@ footer ul li {
 }
 
 footer a {
-  color: #ddd;
+  color: #f8e8f2;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: #f7c948;
 }
 
 .footer-grid {
@@ -216,3 +225,5 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+ 
