@@ -37,87 +37,91 @@
         <p>press enter button</p>
 <pre><code>   mysql.exe -u root -p </code></pre>
         <p>press again enter button</p>
+        <P>If there's no password, just press Enter again</P>
       </article>
       
 
       <!-- Snippet 2 -->
       <article class="card">
-        <h2>Simple Navbar</h2>
-        <pre><code>&lt;nav&gt;
-  &lt;a href="#"&gt;Home&lt;/a&gt;
-  &lt;a href="#"&gt;About&lt;/a&gt;
-  &lt;a href="#"&gt;Contact&lt;/a&gt;
-&lt;/nav&gt;
-
-nav a {
-  margin-right: 16px;
-  text-decoration: none;
-  color: #333;
-}
-nav a:hover {
-  color: #0077cc;
-}
-</code></pre>
+        <h2> Create database   </h2>
+        <pre><code>  create database dbuniversity;         </code></pre>
       </article>
 
-      <!-- Snippet 3 -->
+       <!-- Snippet 3 -->
       <article class="card">
-        <h2>Card Layout</h2>
-        <pre><code>&lt;div class="card"&gt;
-  &lt;h3&gt;Card Title&lt;/h3&gt;
-  &lt;p&gt;Card content goes here.&lt;/p&gt;
-&lt;/div&gt;
-
-.card {
-  border: 1px solid #ddd;
-  padding: 16px;
-  border-radius: 8px;
-}
-</code></pre>
+        <h2> Show databases </h2>
+        <pre><code>  show databases;    </code></pre>
       </article>
 
-      <!-- Snippet 4 -->
+  <!-- Snippet 4 -->
       <article class="card">
-        <h2>Image with Rounded Corners</h2>
-        <pre><code>&lt;img src="image.jpg" alt="Example" class="round"&gt;
-
-.round {
-  border-radius: 12px;
-}
-</code></pre>
+        <h2> Use database </h2>
+        <pre><code>  use dbuniversity;  </code></pre>
       </article>
 
-      <!-- Snippet 5 -->
+     
+ <!-- Snippet 5 -->
       <article class="card">
-        <h2>Responsive Columns</h2>
-        <pre><code>.grid {
-  display: grid;
-  gap: 16px;
-}
-.grid.cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-@media (max-width: 768px) {
-  .grid.cols-2 {
-    grid-template-columns: 1fr;
-  }
-}
-</code></pre>
+        <h2> create table university </h2>
+        <pre><code>  CREATE TABLE university (
+    ID VARCHAR(10) PRIMARY KEY,
+    Name VARCHAR(30) NOT NULL,
+    ChargePerTerm DECIMAL(10, 2),
+    NumOfTerms INT(3) NOT NULL
+);  </code></pre>
       </article>
 
-      <!-- Snippet 6 -->
+
+<!-- Snippet 6-->
       <article class="card">
-        <h2>Sticky Footer</h2>
-        <pre><code>body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-footer {
-  margin-top: auto;
-}
-</code></pre>
+        <h2> Desc university </h2>
+        <pre><code> desc university;  </code></pre>
       </article>
+
+
+<!-- Snippet 7-->
+      <article class="card">
+        <h2> Create table Student </h2>
+        <pre><code> CREATE TABLE Student (
+    UniID VARCHAR(10),
+    IndexNo VARCHAR(10) NOT NULL,
+    Name VARCHAR(50) NOT NULL,
+    DateJoined DATE NOT NULL,
+    PRIMARY KEY (UniID, IndexNo),
+    FOREIGN KEY (UniID) REFERENCES University(ID)
+); </code></pre>
+      </article>
+
+
+<!-- Snippet 8-->
+      <article class="card">
+        <h2> Describe Student </h2>
+        <pre><code>  desc Student; </code></pre>
+      </article>
+
+<!-- Snippet 9-->
+      <article class="card">
+        <h2> Insert into university </h2>
+        <pre><code> INSERT INTO university
+VALUES
+    ('U001', 'University of Technology', 50000.00, 2),
+    ('U002', 'University of AppliedScience', 12000.00, 3); </code></pre>
+      </article>
+
+<!-- Snippet 10-->
+      <article class="card">
+        <h2> Insert into Student </h2>
+        <pre><code>  </code></pre>
+      </article>
+
+
+
+
+
+
+
+      
+    
     </div>
 
     <!-- Ad Placeholder -->
@@ -151,5 +155,6 @@ footer {
   </footer>
 </body>
 </html>
+
 
 
