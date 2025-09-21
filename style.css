@@ -148,18 +148,7 @@ code {
   font-family: "Courier New", monospace;
 }
 
-/* ========== Ads Placeholder (AdSense Safe) ========== */
-.ad {
-  background: #fff3cd; /* soft yellow */
-  border: 2px dashed #d8517a; /* pink dashed border */
-  text-align: center;
-  padding: 20px;
-  margin: 20px 0;
-  font-size: 0.95em;
-  color: #9f3b5f; /* dark pink */
-  border-radius: 8px;
-  user-select: none;  /* prevent accidental text selection */
-}
+
 
 /* ========== Footer ========== */
 footer {
@@ -204,3 +193,4 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
