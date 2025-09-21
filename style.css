@@ -8,8 +8,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #4a3f4a; /* dark muted purple for text */
-  background: #fff9f9; /* very light pink */
+  color: #333;
+  background: #f9f9fb;
 }
 
 /* Containers */
@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #6e3667; /* deeper pink/purple */
+  color: #222;
   margin-bottom: 10px;
 }
 
@@ -30,14 +30,14 @@ p {
 }
 
 .muted {
-  color: #a080a2; /* muted pink */
+  color: #666;
   font-size: 0.95em;
 }
 
 /* ========== Header ========== */
 header {
-  background: #f7c948; /* bright yellow */
-  color: #4a3f4a; /* dark muted purple */
+  background: #0077cc;
+  color: white;
   padding: 15px 0;
 }
 
@@ -59,12 +59,12 @@ header .nav {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #d8517a; /* pink */
+  background: #00cc88;
   display: inline-block;
 }
 
 nav a {
-  color: #4a3f4a;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
@@ -72,28 +72,43 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  color: #d8517a;
-  background: #d8517a; /* pink */
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 10px;
+  background: #0077cc;
   color: white;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s ease;
-  cursor: pointer;
-  border: none;
 }
 
 .btn:hover {
-  background: #b84067; /* darker pink */
+  background: #005fa3;
 }
 
 .btn.alt {
-  background: #f7c948; /* yellow */
-  color: #4a3f4a;
-  border: none;
+  background: #00cc88;
 }
 
 .btn.alt:hover {
-  background: #d1a735; /* darker yellow */
+  background: #009966;
 }
 
 .btn.small {
@@ -104,11 +119,11 @@ nav a:hover {
 /* ========== Cards ========== */
 .card {
   background: white;
-  border: 1px solid #e2cbd7; /* very light pink border */
+  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(216, 81, 122, 0.1); /* subtle pink shadow */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 /* ========== Grid Layouts ========== */
@@ -136,30 +151,39 @@ nav a:hover {
 
 /* ========== Code Blocks ========== */
 pre {
-  background: #fcefee; /* very light pink */
+  background: #f4f4f4;
   padding: 12px;
   border-radius: 6px;
   overflow-x: auto;
   font-size: 0.95em;
-  color: #6e3667;
 }
 
 code {
   font-family: "Courier New", monospace;
 }
 
-
+/* ========== Ads Placeholder ========== */
+.ad {
+  background: #e8f4ff;
+  border: 2px dashed #0077cc;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 0.95em;
+  color: #0077cc;
+  border-radius: 8px;
+}
 
 /* ========== Footer ========== */
 footer {
-  background: #6e3667; /* deep pink/purple */
-  color: #f8e8f2; /* very light pink */
+  background: #222;
+  color: #ddd;
   padding: 30px 0;
   margin-top: 30px;
 }
 
 footer h3 {
-  color: #fcefee;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -172,13 +196,12 @@ footer ul li {
 }
 
 footer a {
-  color: #f8e8f2;
+  color: #ddd;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-  color: #f7c948;
 }
 
 .footer-grid {
@@ -193,4 +216,6 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+
 
