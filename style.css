@@ -162,6 +162,10 @@ code {
   font-family: "Courier New", monospace;
 }
 
+
+
+
+
 /* ========== Ads Placeholder ========== */
 .ad {
   background: #e8f4ff;
@@ -216,6 +220,16 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 
 
